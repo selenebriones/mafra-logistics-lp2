@@ -22,7 +22,9 @@ const { title } = Astro.props;
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <div class="flex items-center">
-        <span class="text-2xl font-bold tracking-tight text-secondary">MAFRA<span class="text-primary">.</span>LOGISTICS</span>
+        <a href="#inicio">
+          <img src="/images/mafra-logistics.webp" alt="Mafra Logistics" class="h-12 w-auto" />
+        </a>
       </div>
       <nav class="hidden md:flex space-x-8 text-sm font-medium">
         <a href="#inicio" class="hover:text-primary transition-colors">Inicio</a>
@@ -42,17 +44,21 @@ const { title } = Astro.props;
   <footer class="bg-gray-50 border-t border-gray-100 py-12 text-sm text-text-muted">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
       <div>
-        <p class="font-bold text-secondary mb-4">MAFRA LOGISTICS</p>
-        <p>Soluciones de transporte de carga pesada con los más altos estándares de eficiencia corporativa.</p>
+        <img src="/images/mafra-logistics.webp" alt="Mafra Logistics" class="h-14 w-auto mb-4" loading="lazy" />
+        <p>Tu aliado estratégico en transporte logístico B2B que responde cuando otros te quedan mal.</p>
+        <p class="mt-4">&copy; 2026 Mafra Logistics. Todos los derechos reservados.</p>
       </div>
       <div>
-        <p class="font-bold text-secondary mb-4">Contacto Logístico</p>
-        <p class="mb-2"><i class="ph ph-envelope mr-2"></i>contacto@mafragrp.com</p>
-        <p><i class="ph ph-shield-check mr-2"></i>Monitoreo Activo 24/7</p>
+        <p class="font-bold text-secondary mb-4">Datos de Contacto</p>
+        <p class="mb-2"><strong class="text-secondary">Ventas México:</strong> <a href="tel:+528129115812" class="hover:text-primary transition-colors">+52 812-911-5812</a></p>
+        <p class="mb-2"><a href="mailto:sales@mafragrp.com" class="hover:text-primary transition-colors">sales@mafragrp.com</a></p>
+        <p><strong class="text-secondary">Dirección:</strong> Cordillera del Himalaya 914, San Nicolás de los Garza, Nuevo León, C.P. 66430.</p>
       </div>
       <div>
         <p class="font-bold text-secondary mb-4">Legal</p>
-        <p>&copy; 2026 Mafra Logistics. Todos los derechos reservados. Aviso de Privacidad.</p>
+        <!-- Placeholder: enlazar páginas legales cuando existan -->
+        <p class="mb-2"><a href="#" class="hover:text-primary transition-colors">Aviso de Privacidad</a></p>
+        <p><a href="#" class="hover:text-primary transition-colors">Términos y Condiciones</a></p>
       </div>
     </div>
   </footer>

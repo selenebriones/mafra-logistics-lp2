@@ -5,7 +5,7 @@ import Layout from '../layouts/Layout.astro';
 
   <section id="inicio" class="relative bg-gray-900 min-h-[65vh] flex items-center">
     <div class="absolute inset-0 z-0 overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=1920" alt="Trailer de Carga Mafra" class="w-full h-full object-cover opacity-45 transform scale-105" />
+      <video id="hero-video" src="/videos/hero-o.mp4" poster="/hero-mafra.jpg" autoplay muted loop playsinline class="w-full h-full object-cover opacity-45 transform scale-105"></video>
       <div class="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/60 to-transparent"></div>
     </div>
 
@@ -235,58 +235,148 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
-        <div class="bg-white border border-gray-100 rounded-lg p-6 shadow-sm flex items-center justify-center text-center">
-          <span class="text-secondary font-bold text-sm">Manufacturera</span>
+        <div class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm">
+          <img src="/images/manufacturera.webp" alt="Industria Manufacturera" class="w-full h-32 object-cover" loading="lazy" />
+          <div class="p-4 text-center">
+            <span class="text-secondary font-bold text-sm">Manufacturera</span>
+          </div>
         </div>
-        <div class="bg-white border border-gray-100 rounded-lg p-6 shadow-sm flex items-center justify-center text-center">
-          <span class="text-secondary font-bold text-sm">Maquiladora</span>
+        <div class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm">
+          <img src="/images/maquiladora.webp" alt="Industria Maquiladora" class="w-full h-32 object-cover" loading="lazy" />
+          <div class="p-4 text-center">
+            <span class="text-secondary font-bold text-sm">Maquiladora</span>
+          </div>
         </div>
-        <div class="bg-white border border-gray-100 rounded-lg p-6 shadow-sm flex items-center justify-center text-center">
-          <span class="text-secondary font-bold text-sm">Automotriz</span>
+        <div class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm">
+          <img src="/images/automotriz.webp" alt="Industria Automotriz" class="w-full h-32 object-cover" loading="lazy" />
+          <div class="p-4 text-center">
+            <span class="text-secondary font-bold text-sm">Automotriz</span>
+          </div>
         </div>
-        <div class="bg-white border border-gray-100 rounded-lg p-6 shadow-sm flex items-center justify-center text-center">
-          <span class="text-secondary font-bold text-sm">Construcción</span>
+        <div class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm">
+          <img src="/images/construccion.webp" alt="Industria de la Construcción" class="w-full h-32 object-cover" loading="lazy" />
+          <div class="p-4 text-center">
+            <span class="text-secondary font-bold text-sm">Construcción</span>
+          </div>
         </div>
-        <div class="bg-white border border-gray-100 rounded-lg p-6 shadow-sm flex items-center justify-center text-center">
-          <span class="text-secondary font-bold text-sm">Siderúrgica</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="cotizar" class="py-20 bg-gray-50 border-t border-gray-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div class="lg:col-span-7 text-center lg:text-left">
-          <span class="text-primary text-xs font-bold uppercase tracking-widest">Solicita tu Cotización</span>
-          <h2 class="text-3xl font-extrabold text-secondary mt-2 tracking-tight border-none p-0">Cotiza tu Ruta al Instante</h2>
-          <p class="text-text-muted mt-3 max-w-xl mx-auto lg:mx-0">Respuestas inmediatas para optimizar tus presupuestos de compras. Nuestro equipo te contactará a la brevedad para confirmar disponibilidad de unidades.</p>
-        </div>
-
-        <div class="lg:col-span-5">
-          <div class="bg-white p-8 rounded shadow-xl border border-gray-100 max-w-md mx-auto">
-            <form class="space-y-4" onsubmit="event.preventDefault();">
-              <div>
-                <label class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Origen</label>
-                <input type="text" placeholder="Ciudad de Origen" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" />
-              </div>
-              <div>
-                <label class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Destino</label>
-                <input type="text" placeholder="Ciudad de Destino" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" />
-              </div>
-              <div>
-                <label class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Tipo de Carga / Unidad</label>
-                <select class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary bg-white">
-                  <option>Caja Seca 53"</option>
-                  <option>Plataforma</option>
-                  <option>Full / Doble Semirremolque</option>
-                </select>
-              </div>
-              <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded text-sm transition-colors mt-2 shadow-sm">Enviar Solicitud</button>
-            </form>
+        <div class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm">
+          <img src="/images/siderurgia.webp" alt="Industria Siderúrgica" class="w-full h-32 object-cover" loading="lazy" />
+          <div class="p-4 text-center">
+            <span class="text-secondary font-bold text-sm">Siderúrgica</span>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <section id="clientes" class="py-20 bg-white border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-primary text-xs font-bold uppercase tracking-widest">Mafra Logistics</span>
+        <h2 class="text-3xl font-extrabold text-secondary mt-2 tracking-tight border-none p-0">Nuestro Portafolio de Clientes</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[120px]">
+          <img src="/images/ast.webp" alt="AST — Advanced Steel Technology" class="max-h-14 w-auto max-w-full object-contain" loading="lazy" />
+        </div>
+        <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[120px]">
+          <img src="/images/avery.webp" alt="Avery Dennison" class="max-h-20 w-auto max-w-full object-contain" loading="lazy" />
+        </div>
+        <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[120px]">
+          <!-- El SVG original es blanco; brightness-0 + opacity lo vuelve gris oscuro sobre fondo claro -->
+          <img src="/images/ALP2022.svg" alt="A.L.P. — Lighting Component Specialists" class="h-10 w-auto max-w-full object-contain brightness-0 opacity-70" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="py-20 bg-white border-t border-gray-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-extrabold text-secondary tracking-tight border-none p-0">Sobre Nosotros</h2>
+      <p class="text-text-muted leading-relaxed mt-6">En <strong class="text-secondary">Mafra Logistics</strong> somos un equipo joven, enérgico e incansablemente preparado, impulsado por una pasión colectiva por la excelencia. Combinamos a la perfección el vigor con la experiencia técnica del sector para ofrecer una experiencia logística innovadora, ágil y confiable.</p>
+      <p class="text-text-muted leading-relaxed mt-4">Respaldados por una infraestructura de flota moderna y una sólida red de socios estratégicos. Somos tu fuerza dinámica de transporte con cobertura local y nacional.</p>
+    </div>
+  </section>
+
+  <section id="cotizar" class="py-20 bg-primary">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+
+        <div>
+          <h2 class="text-3xl font-extrabold text-white tracking-tight border-none p-0">Envía tu Cotización</h2>
+          <p class="text-white/90 mt-4 leading-relaxed">Le damos prioridad exclusiva a tu cuenta corporativa. Recibe respuesta inmediata de nuestro equipo de despacho.</p>
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-start gap-2 text-sm text-white">
+              <i class="ph ph-check-circle text-white text-base mt-0.5"></i>
+              <span>Respuesta en menos de 15 minutos.</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-white">
+              <i class="ph ph-check-circle text-white text-base mt-0.5"></i>
+              <span>Flota propia disponible.</span>
+            </li>
+          </ul>
+
+          <div class="bg-white p-8 rounded shadow-xl mt-10">
+            <!-- Formulario solo maquetado: pendiente conectar destino de envío -->
+            <form class="space-y-4" onsubmit="event.preventDefault();">
+              <div>
+                <label for="cot-nombre" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Nombre</label>
+                <input id="cot-nombre" name="nombre" type="text" placeholder="Tu nombre completo" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" />
+              </div>
+              <div>
+                <label for="cot-empresa" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Empresa</label>
+                <input id="cot-empresa" name="empresa" type="text" placeholder="Nombre de tu empresa" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" />
+              </div>
+              <div>
+                <label for="cot-correo" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Correo</label>
+                <input id="cot-correo" name="correo" type="email" placeholder="correo@empresa.com" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" />
+              </div>
+              <div>
+                <label for="cot-telefono" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Teléfono</label>
+                <input id="cot-telefono" name="telefono" type="tel" placeholder="81 0000 0000" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" />
+              </div>
+              <div>
+                <label for="cot-unidad" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Tipo de Unidad Requerida</label>
+                <select id="cot-unidad" name="unidad" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary bg-white">
+                  <option>Caja Seca de 53'</option>
+                  <option>Rabones de Caja (26')</option>
+                  <option>Plataforma de 48 y 53 pies</option>
+                  <option>Refrigeradas 53'</option>
+                  <option>Unidades 3.5 Plataforma y Caja Cerrada</option>
+                  <option>LTL (Consolidados)</option>
+                </select>
+              </div>
+              <div>
+                <label for="cot-ruta" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Ruta (Origen/Destino)</label>
+                <input id="cot-ruta" name="ruta" type="text" placeholder="Ej. Monterrey → Saltillo" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" />
+              </div>
+              <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded text-sm transition-colors mt-2 shadow-sm">Cotizar</button>
+            </form>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-3xl font-extrabold text-white tracking-tight border-none p-0">¿Urgencia de Última Hora?</h2>
+          <p class="text-white/90 mt-4 leading-relaxed">No dejes que se detenga tu cadena de suministro. Te asignamos una unidad de inmediato con control y monitoreo continuo.</p>
+          <a href="tel:+528129115812" class="mt-8 inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-primary font-bold py-3 px-8 rounded text-sm transition-colors shadow-sm">
+            <i class="ph ph-phone-call text-lg"></i>
+            Llamada Directa
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const heroVideo = document.getElementById('hero-video') as HTMLVideoElement | null;
+    if (heroVideo) {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        heroVideo.pause();
+      } else {
+        heroVideo.playbackRate = 2.5;
+      }
+    }
+  </script>
 </Layout>
