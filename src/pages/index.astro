@@ -1,0 +1,292 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Fletes Industriales Nuevo León">
+
+  <section id="inicio" class="relative bg-gray-900 min-h-[65vh] flex items-center">
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=1920" alt="Trailer de Carga Mafra" class="w-full h-full object-cover opacity-45 transform scale-105" />
+      <div class="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/60 to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 flex flex-col items-center text-center text-white">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight whitespace-nowrap">Fletes Industriales Nuevo León</h1>
+      <p class="mt-6 text-lg text-gray-200 max-w-2xl">¿Necesitas transportar maquinaria o mercancía con urgencia?</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-6 text-sm">
+        <div class="flex items-center gap-2"><i class="ph ph-clock-countdown text-primary text-xl"></i> Monitoreo Real 24/7</div>
+        <div class="flex items-center gap-2"><i class="ph ph-shield-check text-primary text-xl"></i> Unidades Certificadas</div>
+      </div>
+      <a href="tel:+528129115812" class="mt-8 inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded text-sm transition-colors shadow-sm">
+        <i class="ph ph-phone-call text-lg"></i>
+        Cotizar Ahora
+      </a>
+    </div>
+  </section>
+
+  <section id="flota" class="py-20 bg-gray-50 border-y border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-primary text-xs font-bold uppercase tracking-widest">Equipamiento Superior</span>
+        <h2 class="text-3xl font-extrabold text-secondary tracking-tight border-none p-0 mt-2">Soluciones de Carga a tu Medida</h2>
+        <p class="text-text-muted mt-3">Realizamos fletes especializados en todo Nuevo León con disponibilidad 24/7 dependiendo de tu unidad, ruta y carga.</p>
+      </div>
+
+      <div class="swiper flotaSwiper pb-12">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col h-full">
+            <div class="h-48 bg-gray-100 relative">
+              <img src="/images/caja_seca.webp" alt="Caja Seca de 53 Pies" class="w-full h-full object-cover" loading="lazy" />
+            </div>
+            <div class="p-6 flex-grow flex flex-col">
+              <h3 class="text-lg font-bold text-secondary mt-0">Caja Seca de 53 Pies</h3>
+              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100">
+                <li><strong>Capacidad:</strong> Hasta 25-28 Toneladas</li>
+                <li><strong>Seguridad:</strong> Rastreo GPS satelital activo continuo</li>
+              </ul>
+              <div class="flex-grow"></div>
+              <a href="#cotizar" class="mt-4 inline-flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-white text-sm font-semibold py-2.5 rounded transition-colors">Solicitar</a>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col h-full">
+            <div class="h-48 bg-gray-100 relative">
+              <img src="/images/rabones_de_caja.webp" alt="Rabones de Caja 26 Pies" class="w-full h-full object-cover" loading="lazy" />
+            </div>
+            <div class="p-6 flex-grow flex flex-col">
+              <h3 class="text-lg font-bold text-secondary mt-0">Rabones de Caja (26')</h3>
+              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100">
+                <li><strong>Capacidad:</strong> Hasta 8-10 Toneladas</li>
+                <li><strong>Ventaja:</strong> Maniobrabilidad en zonas de difícil acceso</li>
+              </ul>
+              <div class="flex-grow"></div>
+              <a href="#cotizar" class="mt-4 inline-flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-white text-sm font-semibold py-2.5 rounded transition-colors">Solicitar</a>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col h-full">
+            <div class="h-48 bg-gray-100 relative">
+              <img src="/images/plataforma48.webp" alt="Plataforma de 48 y 53 Pies" class="w-full h-full object-cover" loading="lazy" />
+            </div>
+            <div class="p-6 flex-grow flex flex-col">
+              <h3 class="text-lg font-bold text-secondary mt-0">Plataforma de 48 y 53 Pies</h3>
+              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100">
+                <li><strong>Capacidad:</strong> Configuraciones full y sencillo</li>
+                <li><strong>Amarre:</strong> Sistemas de sujeción certificados de alta resistencia</li>
+              </ul>
+              <div class="flex-grow"></div>
+              <a href="#cotizar" class="mt-4 inline-flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-white text-sm font-semibold py-2.5 rounded transition-colors">Solicitar</a>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col h-full">
+            <div class="h-48 bg-gray-100 relative">
+              <img src="/images/caja_refrigerada.webp" alt="Caja Refrigerada 53 Pies" class="w-full h-full object-cover" loading="lazy" />
+            </div>
+            <div class="p-6 flex-grow flex flex-col">
+              <h3 class="text-lg font-bold text-secondary mt-0">Refrigeradas 53'</h3>
+              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100">
+                <li><strong>Capacidad:</strong> Hasta 25-28 Toneladas</li>
+                <li><strong>Control:</strong> Monitoreo continuo de temperatura</li>
+              </ul>
+              <div class="flex-grow"></div>
+              <a href="#cotizar" class="mt-4 inline-flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-white text-sm font-semibold py-2.5 rounded transition-colors">Solicitar</a>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col h-full">
+            <div class="h-48 bg-gray-100 relative">
+              <img src="/images/unidades3_5_cajacerrada.webp" alt="Unidad 3.5 Toneladas Plataforma y Caja Cerrada" class="w-full h-full object-cover" loading="lazy" />
+            </div>
+            <div class="p-6 flex-grow flex flex-col">
+              <h3 class="text-lg font-bold text-secondary mt-0">Unidades 3.5 Plataforma y Caja Cerrada</h3>
+              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100">
+                <li><strong>Capacidad:</strong> Hasta 3.5 Toneladas</li>
+                <li><strong>Ventaja:</strong> Disponibilidad inmediata y bajo costo por viaje</li>
+              </ul>
+              <div class="flex-grow"></div>
+              <a href="#cotizar" class="mt-4 inline-flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-white text-sm font-semibold py-2.5 rounded transition-colors">Solicitar</a>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col h-full">
+            <div class="h-48 bg-gray-100 relative">
+              <img src="/images/ltl.webp" alt="Carga Consolidada LTL" class="w-full h-full object-cover" loading="lazy" />
+            </div>
+            <div class="p-6 flex-grow flex flex-col">
+              <h3 class="text-lg font-bold text-secondary mt-0">LTL (Consolidados)</h3>
+              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100">
+                <li><strong>Capacidad:</strong> Espacio según volumen contratado</li>
+                <li><strong>Eficiencia:</strong> Reduce costos logísticos unitarios por ruta</li>
+              </ul>
+              <div class="flex-grow"></div>
+              <a href="#cotizar" class="mt-4 inline-flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-white text-sm font-semibold py-2.5 rounded transition-colors">Solicitar</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination mt-4"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios-brindados" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl font-extrabold text-secondary tracking-tight border-none p-0">Servicios que te brindamos</h2>
+        <p class="text-text-muted mt-3">Nos llamas, confirmamos disponibilidad y asignamos la unidad. Movemos tu carga con cobro por viaje, sin contratos ni compromisos. Ideal para operaciones regulares, urgencias y servicios dedicados.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-50 p-8 rounded border border-gray-100 flex flex-col">
+          <div class="bg-primary/10 text-primary w-12 h-12 rounded flex items-center justify-center text-2xl mb-6">
+            <i class="ph ph-lightning"></i>
+          </div>
+          <h3 class="text-lg font-bold text-secondary mt-0">Hotshot Trucking (Urgencias)</h3>
+          <p class="text-text-muted text-sm mt-2">Atendemos envíos de última hora para industrias como manufactura y maquiladoras.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded border border-gray-100 flex flex-col">
+          <div class="bg-primary/10 text-primary w-12 h-12 rounded flex items-center justify-center text-2xl mb-6">
+            <i class="ph ph-truck"></i>
+          </div>
+          <h3 class="text-lg font-bold text-secondary mt-0">Flota Propia</h3>
+          <p class="text-text-muted text-sm mt-2">Asignamos unidades dedicadas con disponibilidad garantizada.</p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded border border-gray-100 flex flex-col">
+          <div class="bg-primary/10 text-primary w-12 h-12 rounded flex items-center justify-center text-2xl mb-6">
+            <i class="ph ph-headset"></i>
+          </div>
+          <h3 class="text-lg font-bold text-secondary mt-0">Monitoreo y Soporte 24/7</h3>
+          <p class="text-text-muted text-sm mt-2">Rastreo y atención para asegurar que tu carga llegue a tiempo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="relative py-20 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="/bento-ftl.jpg" alt="" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-[#1a1a1a]/60"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-16">
+        <span class="text-primary text-xs font-bold uppercase tracking-widest">Mafra Logistics</span>
+        <h2 class="text-3xl font-extrabold text-white mt-2 tracking-tight border-none p-0">¿Por qué debes elegirnos?</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-[#1a1a1a] border border-text-muted/40 rounded-lg p-8 shadow-lg">
+          <h3 class="text-xl font-bold text-white mt-0">Esquemas de Renta Flexibles</h3>
+          <p class="text-white text-sm mt-4 leading-relaxed">Si tu operación requiere 2 o más viajes al día, te ofrecemos renta por jornada (8, 10 o 12 horas) en lugar de pagar de forma individual por cada servicio de fletes.</p>
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-start gap-2 text-sm text-white">
+              <i class="ph ph-check text-primary text-base mt-0.5"></i>
+              <span>Tarifa menor a mayor plazo: día, semana o mes.</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-white">
+              <i class="ph ph-check text-primary text-base mt-0.5"></i>
+              <span>Descuentos por volumen de unidades en tus fletes de carga.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-[#1a1a1a] border border-text-muted/40 rounded-lg p-8 shadow-lg">
+          <h3 class="text-xl font-bold text-white mt-0">Proyectos de Ahorro a la Medida</h3>
+          <p class="text-white text-sm mt-4 leading-relaxed">Analizamos tu operación y diseñamos un esquema logístico que reduce directamente tu costo por servicio.</p>
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-start gap-2 text-sm text-white">
+              <i class="ph ph-check text-primary text-base mt-0.5"></i>
+              <span>Enfocado en tus metas de ahorro anual.</span>
+            </li>
+            <li class="flex items-start gap-2 text-sm text-white">
+              <i class="ph ph-check text-primary text-base mt-0.5"></i>
+              <span>Somos socios de proyecto, no solo proveedores.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cobertura" class="py-20 bg-white border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-16">
+        <span class="text-primary text-xs font-bold uppercase tracking-widest">Mafra Logistics</span>
+        <h2 class="text-3xl font-extrabold text-secondary mt-2 tracking-tight border-none p-0">Cobertura Local y Nacional</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="flex flex-col justify-start">
+          <p class="text-text-muted leading-relaxed">Contamos con bases operativas en Nuevo León, por lo que garantizamos tiempos de respuesta mínimos y disponibilidad inmediata de equipo en las principales zonas industriales del estado.</p>
+          <p class="text-text-muted leading-relaxed mt-4">Desarrollamos nuevas rutas por petición de nuestros clientes.</p>
+          <p class="text-text-muted leading-relaxed mt-4">Abrimos rutas en México, desde Baja California hasta Tamaulipas, el Bajío y el centro de México.</p>
+        </div>
+
+        <div class="rounded-lg overflow-hidden shadow-lg border border-gray-100">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856245.179822836!2d-99.81416939999998!3d25.4809102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629584a2a5b05d%3A0x701df442c36cbbc6!2sNuevo%20Le%C3%B3n!5e1!3m2!1ses!2smx!4v1783646753408!5m2!1ses!2smx" width="100%" height="100%" style="border:0; min-height: 320px;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="industrias" class="py-20 bg-gray-50 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-16">
+        <span class="text-primary text-xs font-bold uppercase tracking-widest">Mafra Logistics</span>
+        <h2 class="text-3xl font-extrabold text-secondary mt-2 tracking-tight border-none p-0">Industrias que han confiado en nosotros</h2>
+        <p class="text-text-muted mt-3">Entendemos la precisión operativa, las normativas y la urgencia que exigen los sectores clave de la región:</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+        <div class="bg-white border border-gray-100 rounded-lg p-6 shadow-sm flex items-center justify-center text-center">
+          <span class="text-secondary font-bold text-sm">Manufacturera</span>
+        </div>
+        <div class="bg-white border border-gray-100 rounded-lg p-6 shadow-sm flex items-center justify-center text-center">
+          <span class="text-secondary font-bold text-sm">Maquiladora</span>
+        </div>
+        <div class="bg-white border border-gray-100 rounded-lg p-6 shadow-sm flex items-center justify-center text-center">
+          <span class="text-secondary font-bold text-sm">Automotriz</span>
+        </div>
+        <div class="bg-white border border-gray-100 rounded-lg p-6 shadow-sm flex items-center justify-center text-center">
+          <span class="text-secondary font-bold text-sm">Construcción</span>
+        </div>
+        <div class="bg-white border border-gray-100 rounded-lg p-6 shadow-sm flex items-center justify-center text-center">
+          <span class="text-secondary font-bold text-sm">Siderúrgica</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cotizar" class="py-20 bg-gray-50 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 text-center lg:text-left">
+          <span class="text-primary text-xs font-bold uppercase tracking-widest">Solicita tu Cotización</span>
+          <h2 class="text-3xl font-extrabold text-secondary mt-2 tracking-tight border-none p-0">Cotiza tu Ruta al Instante</h2>
+          <p class="text-text-muted mt-3 max-w-xl mx-auto lg:mx-0">Respuestas inmediatas para optimizar tus presupuestos de compras. Nuestro equipo te contactará a la brevedad para confirmar disponibilidad de unidades.</p>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="bg-white p-8 rounded shadow-xl border border-gray-100 max-w-md mx-auto">
+            <form class="space-y-4" onsubmit="event.preventDefault();">
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Origen</label>
+                <input type="text" placeholder="Ciudad de Origen" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Destino</label>
+                <input type="text" placeholder="Ciudad de Destino" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Tipo de Carga / Unidad</label>
+                <select class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary bg-white">
+                  <option>Caja Seca 53"</option>
+                  <option>Plataforma</option>
+                  <option>Full / Doble Semirremolque</option>
+                </select>
+              </div>
+              <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded text-sm transition-colors mt-2 shadow-sm">Enviar Solicitud</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

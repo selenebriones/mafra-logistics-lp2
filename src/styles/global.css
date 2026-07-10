@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #B43A4A;
+  --color-secondary: #4D4D4D;
+  --color-text-muted: #939598;
+  --font-sans: 'Inter', sans-serif;
+}
+
+html, body {
+  font-family: var(--font-sans);
+  color: var(--color-secondary);
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+}
+
+/* Ajustes de Color para las flechas y paginación interactiva del Slider */
+.swiper-button-next, .swiper-button-prev {
+  color: var(--color-primary) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--color-primary) !important;
+}

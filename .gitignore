@@ -1,0 +1,22 @@
+# Dependencias
+node_modules/
+dist/
+.astro/
+
+# Caché y herramientas
+.cache/
+.claude/
+
+# Archivos del sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Entorno (por si agregas claves secretas después)
+.env
+.env.production
+.env.development

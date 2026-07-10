@@ -1,0 +1,79 @@
+---
+import "../styles/global.css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-white text-secondary antialiased">
+
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center">
+        <span class="text-2xl font-bold tracking-tight text-secondary">MAFRA<span class="text-primary">.</span>LOGISTICS</span>
+      </div>
+      <nav class="hidden md:flex space-x-8 text-sm font-medium">
+        <a href="#inicio" class="hover:text-primary transition-colors">Inicio</a>
+        <a href="#flota" class="hover:text-primary transition-colors">Nuestra Flota</a>
+        <a href="#servicios" class="hover:text-primary transition-colors">Servicios</a>
+      </nav>
+      <div>
+        <a href="#cotizar" class="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded text-sm font-semibold transition-all inline-block shadow-sm">Cotizar Ahora</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="bg-gray-50 border-t border-gray-100 py-12 text-sm text-text-muted">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <p class="font-bold text-secondary mb-4">MAFRA LOGISTICS</p>
+        <p>Soluciones de transporte de carga pesada con los más altos estándares de eficiencia corporativa.</p>
+      </div>
+      <div>
+        <p class="font-bold text-secondary mb-4">Contacto Logístico</p>
+        <p class="mb-2"><i class="ph ph-envelope mr-2"></i>contacto@mafragrp.com</p>
+        <p><i class="ph ph-shield-check mr-2"></i>Monitoreo Activo 24/7</p>
+      </div>
+      <div>
+        <p class="font-bold text-secondary mb-4">Legal</p>
+        <p>&copy; 2026 Mafra Logistics. Todos los derechos reservados. Aviso de Privacidad.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    import { Swiper } from 'swiper';
+    import { Navigation, Pagination } from 'swiper/modules';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      new Swiper('.flotaSwiper', {
+        modules: [Navigation, Pagination],
+        slidesPerView: 1,
+        spaceBetween: 24,
+        pagination: { el: '.swiper-pagination', clickable: true },
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        breakpoints: {
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
