@@ -6,6 +6,7 @@ dist/
 # Caché y herramientas
 .cache/
 .claude/
+.vercel/
 
 # Archivos del sistema
 .DS_Store

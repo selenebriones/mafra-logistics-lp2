@@ -318,27 +318,27 @@ import Layout from '../layouts/Layout.astro';
           </ul>
 
           <div class="bg-white p-8 rounded shadow-xl mt-10">
-            <!-- Formulario solo maquetado: pendiente conectar destino de envío -->
-            <form class="space-y-4" onsubmit="event.preventDefault();">
+            <form id="contact-form" class="space-y-4">
+              <input type="text" name="website" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
               <div>
                 <label for="cot-nombre" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Nombre</label>
-                <input id="cot-nombre" name="nombre" type="text" placeholder="Tu nombre completo" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" />
+                <input id="cot-nombre" name="nombre" type="text" placeholder="Tu nombre completo" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" required />
               </div>
               <div>
                 <label for="cot-empresa" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Empresa</label>
-                <input id="cot-empresa" name="empresa" type="text" placeholder="Nombre de tu empresa" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" />
+                <input id="cot-empresa" name="empresa" type="text" placeholder="Nombre de tu empresa" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" required />
               </div>
               <div>
                 <label for="cot-correo" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Correo</label>
-                <input id="cot-correo" name="correo" type="email" placeholder="correo@empresa.com" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" />
+                <input id="cot-correo" name="correo" type="email" placeholder="correo@empresa.com" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" required />
               </div>
               <div>
                 <label for="cot-telefono" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Teléfono</label>
-                <input id="cot-telefono" name="telefono" type="tel" placeholder="81 0000 0000" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" />
+                <input id="cot-telefono" name="telefono" type="tel" placeholder="81 0000 0000" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" required />
               </div>
               <div>
                 <label for="cot-unidad" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Tipo de Unidad Requerida</label>
-                <select id="cot-unidad" name="unidad" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary bg-white">
+                <select id="cot-unidad" name="unidad" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary bg-white" required>
                   <option>Caja Seca de 53'</option>
                   <option>Rabones de Caja (26')</option>
                   <option>Plataforma de 48 y 53 pies</option>
@@ -349,9 +349,10 @@ import Layout from '../layouts/Layout.astro';
               </div>
               <div>
                 <label for="cot-ruta" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Ruta (Origen/Destino)</label>
-                <input id="cot-ruta" name="ruta" type="text" placeholder="Ej. Monterrey → Saltillo" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" />
+                <input id="cot-ruta" name="ruta" type="text" placeholder="Ej. Monterrey → Saltillo" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" required />
               </div>
-              <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded text-sm transition-colors mt-2 shadow-sm">Cotizar</button>
+              <button id="contact-submit" type="submit" class="w-full bg-primary hover:bg-primary/90 disabled:bg-text-muted disabled:cursor-not-allowed text-white font-bold py-3 px-4 rounded text-sm transition-colors mt-2 shadow-sm">Cotizar</button>
+              <p id="contact-status" class="hidden text-sm font-semibold" role="status" aria-live="polite"></p>
             </form>
           </div>
         </div>
@@ -377,6 +378,65 @@ import Layout from '../layouts/Layout.astro';
       } else {
         heroVideo.playbackRate = 2.5;
       }
+
+      const contactForm = document.getElementById('contact-form') as HTMLFormElement | null;
+      const contactSubmit = document.getElementById('contact-submit') as HTMLButtonElement | null;
+      const contactStatus = document.getElementById('contact-status') as HTMLParagraphElement | null;
+
+      contactForm?.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        if (!contactForm.checkValidity()) {
+          contactForm.reportValidity();
+          return;
+        }
+
+        const formData = new FormData(contactForm);
+        const payload = Object.fromEntries(formData.entries());
+
+        if (contactSubmit) {
+          contactSubmit.disabled = true;
+          contactSubmit.textContent = 'Enviando...';
+        }
+
+        if (contactStatus) {
+          contactStatus.className = 'text-sm font-semibold text-secondary';
+          contactStatus.textContent = 'Estamos enviando tu solicitud.';
+        }
+
+        try {
+          const response = await fetch('/api/contacto', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(payload),
+          });
+
+          const result = await response.json();
+
+          if (!response.ok || !result.ok) {
+            throw new Error(result.message ?? 'No pudimos enviar la cotización.');
+          }
+
+          contactForm.reset();
+
+          if (contactStatus) {
+            contactStatus.className = 'text-sm font-semibold text-green-700';
+            contactStatus.textContent = result.message ?? 'Recibimos tu solicitud. Te contactaremos en breve.';
+          }
+        } catch (error) {
+          if (contactStatus) {
+            contactStatus.className = 'text-sm font-semibold text-red-700';
+            contactStatus.textContent = error instanceof Error ? error.message : 'No pudimos enviar la cotización.';
+          }
+        } finally {
+          if (contactSubmit) {
+            contactSubmit.disabled = false;
+            contactSubmit.textContent = 'Cotizar';
+          }
+        }
+      });
     }
   </script>
 </Layout>
