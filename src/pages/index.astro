@@ -416,6 +416,11 @@ import Layout from '../layouts/Layout.astro';
           const result = await response.json();
 
           if (!response.ok || !result.ok) {
+            console.error('[contacto] Error del servidor', {
+              status: response.status,
+              requestId: result.requestId,
+              message: result.message,
+            });
             throw new Error(result.message ?? 'No pudimos enviar la cotización.');
           }
 
