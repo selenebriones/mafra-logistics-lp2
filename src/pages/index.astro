@@ -11,10 +11,10 @@ import Layout from '../layouts/Layout.astro';
 
     <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 flex flex-col items-center text-center text-white">
       <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight lg:whitespace-nowrap">Fletes Industriales<br class="hidden [@media(min-width:640px)_and_(max-width:747px)]:inline" /> Nuevo León</h1>
-      <p class="mt-6 text-lg text-gray-200 max-w-2xl">¿Necesitas transportar maquinaria o mercancía con urgencia?</p>
-      <div class="mt-8 flex flex-wrap justify-center gap-6 text-sm">
-        <div class="flex items-center gap-2"><i class="ph ph-clock-countdown text-primary text-xl"></i> Monitoreo Real 24/7</div>
-        <div class="flex items-center gap-2"><i class="ph ph-shield-check text-primary text-xl"></i> Unidades Certificadas</div>
+      <p class="mt-6 text-[1.4625rem] text-gray-200 max-w-2xl lg:max-w-none lg:whitespace-nowrap">¿Necesitas transportar maquinaria o mercancía con urgencia?</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-6 text-[1.1375rem]">
+        <div class="flex items-center gap-2"><i class="ph ph-clock-countdown text-primary text-[1.625rem]"></i> Monitoreo Real 24/7</div>
+        <div class="flex items-center gap-2"><i class="ph ph-shield-check text-primary text-[1.625rem]"></i> Unidades Certificadas</div>
       </div>
       <a href="tel:+528129115812" class="mt-8 inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded text-sm transition-colors shadow-sm">
         <i class="ph ph-phone-call text-lg"></i>
@@ -26,20 +26,19 @@ import Layout from '../layouts/Layout.astro';
   <section id="flota" class="py-20 bg-gray-50 border-y border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-primary text-xs font-bold uppercase tracking-widest">Equipamiento Superior</span>
-        <h2 class="text-3xl font-extrabold text-secondary tracking-tight border-none p-0 mt-2">Soluciones de Carga a tu Medida</h2>
+        <h2 class="text-[2.625rem] font-extrabold text-secondary tracking-tight border-none p-0">Soluciones de Carga a tu Medida</h2>
         <p class="text-text-muted mt-3">Realizamos fletes especializados en todo Nuevo León con disponibilidad 24/7 dependiendo de tu unidad, ruta y carga.</p>
       </div>
 
       <div class="swiper flotaSwiper pb-12">
         <div class="swiper-wrapper">
-          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col h-full">
+          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col self-stretch h-auto">
             <div class="h-48 bg-gray-100 relative">
               <img src="/images/caja_seca.webp" alt="Caja Seca de 53 Pies" class="w-full h-full object-cover" loading="lazy" />
             </div>
             <div class="p-6 flex-grow flex flex-col">
-              <h3 class="text-lg font-bold text-secondary mt-0">Caja Seca de 53 Pies</h3>
-              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100">
+              <h3 class="text-lg font-bold text-secondary mt-0 min-h-[3.5rem] flex items-center">Caja Seca de 53 Pies</h3>
+              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100 min-h-[4.5rem]">
                 <li><strong>Capacidad:</strong> Hasta 25-28 Toneladas</li>
                 <li><strong>Seguridad:</strong> Rastreo GPS satelital activo continuo</li>
               </ul>
@@ -47,13 +46,13 @@ import Layout from '../layouts/Layout.astro';
               <a href="#cotizar" class="mt-4 inline-flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-white text-sm font-semibold py-2.5 rounded transition-colors">Solicitar</a>
             </div>
           </div>
-          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col h-full">
+          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col self-stretch h-auto">
             <div class="h-48 bg-gray-100 relative">
               <img src="/images/rabones_de_caja.webp" alt="Rabones de Caja 26 Pies" class="w-full h-full object-cover" loading="lazy" />
             </div>
             <div class="p-6 flex-grow flex flex-col">
-              <h3 class="text-lg font-bold text-secondary mt-0">Rabones de Caja (26')</h3>
-              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100">
+              <h3 class="text-lg font-bold text-secondary mt-0 min-h-[3.5rem] flex items-center">Rabones de Caja (26')</h3>
+              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100 min-h-[4.5rem]">
                 <li><strong>Capacidad:</strong> Hasta 8-10 Toneladas</li>
                 <li><strong>Ventaja:</strong> Maniobrabilidad en zonas de difícil acceso</li>
               </ul>
@@ -61,13 +60,13 @@ import Layout from '../layouts/Layout.astro';
               <a href="#cotizar" class="mt-4 inline-flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-white text-sm font-semibold py-2.5 rounded transition-colors">Solicitar</a>
             </div>
           </div>
-          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col h-full">
+          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col self-stretch h-auto">
             <div class="h-48 bg-gray-100 relative">
               <img src="/images/plataforma48.webp" alt="Plataforma de 48 y 53 Pies" class="w-full h-full object-cover" loading="lazy" />
             </div>
             <div class="p-6 flex-grow flex flex-col">
-              <h3 class="text-lg font-bold text-secondary mt-0">Plataforma de 48 y 53 Pies</h3>
-              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100">
+              <h3 class="text-lg font-bold text-secondary mt-0 min-h-[3.5rem] flex items-center">Plataforma de 48 y 53 Pies</h3>
+              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100 min-h-[4.5rem]">
                 <li><strong>Capacidad:</strong> Configuraciones full y sencillo</li>
                 <li><strong>Amarre:</strong> Sistemas de sujeción certificados de alta resistencia</li>
               </ul>
@@ -75,13 +74,13 @@ import Layout from '../layouts/Layout.astro';
               <a href="#cotizar" class="mt-4 inline-flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-white text-sm font-semibold py-2.5 rounded transition-colors">Solicitar</a>
             </div>
           </div>
-          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col h-full">
+          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col self-stretch h-auto">
             <div class="h-48 bg-gray-100 relative">
               <img src="/images/caja_refrigerada.webp" alt="Caja Refrigerada 53 Pies" class="w-full h-full object-cover" loading="lazy" />
             </div>
             <div class="p-6 flex-grow flex flex-col">
-              <h3 class="text-lg font-bold text-secondary mt-0">Refrigeradas 53'</h3>
-              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100">
+              <h3 class="text-lg font-bold text-secondary mt-0 min-h-[3.5rem] flex items-center">Refrigeradas 53'</h3>
+              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100 min-h-[4.5rem]">
                 <li><strong>Capacidad:</strong> Hasta 25-28 Toneladas</li>
                 <li><strong>Control:</strong> Monitoreo continuo de temperatura</li>
               </ul>
@@ -89,13 +88,13 @@ import Layout from '../layouts/Layout.astro';
               <a href="#cotizar" class="mt-4 inline-flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-white text-sm font-semibold py-2.5 rounded transition-colors">Solicitar</a>
             </div>
           </div>
-          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col h-full">
+          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col self-stretch h-auto">
             <div class="h-48 bg-gray-100 relative">
               <img src="/images/unidades3_5_cajacerrada.webp" alt="Unidad 3.5 Toneladas Plataforma y Caja Cerrada" class="w-full h-full object-cover" loading="lazy" />
             </div>
             <div class="p-6 flex-grow flex flex-col">
-              <h3 class="text-lg font-bold text-secondary mt-0">Unidades 3.5 Plataforma y Caja Cerrada</h3>
-              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100">
+              <h3 class="text-lg font-bold text-secondary mt-0 min-h-[3.5rem] flex items-center">Unidades 3.5 Plataforma y Caja Cerrada</h3>
+              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100 min-h-[4.5rem]">
                 <li><strong>Capacidad:</strong> Hasta 3.5 Toneladas</li>
                 <li><strong>Ventaja:</strong> Disponibilidad inmediata y bajo costo por viaje</li>
               </ul>
@@ -103,13 +102,13 @@ import Layout from '../layouts/Layout.astro';
               <a href="#cotizar" class="mt-4 inline-flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-white text-sm font-semibold py-2.5 rounded transition-colors">Solicitar</a>
             </div>
           </div>
-          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col h-full">
+          <div class="swiper-slide bg-white rounded border border-gray-100 overflow-hidden shadow-sm flex flex-col self-stretch h-auto">
             <div class="h-48 bg-gray-100 relative">
               <img src="/images/ltl.webp" alt="Carga Consolidada LTL" class="w-full h-full object-cover" loading="lazy" />
             </div>
             <div class="p-6 flex-grow flex flex-col">
-              <h3 class="text-lg font-bold text-secondary mt-0">LTL (Consolidados)</h3>
-              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100">
+              <h3 class="text-lg font-bold text-secondary mt-0 min-h-[3.5rem] flex items-center">LTL (Consolidados)</h3>
+              <ul class="text-xs text-secondary space-y-2 mt-4 pt-4 border-t border-gray-100 min-h-[4.5rem]">
                 <li><strong>Capacidad:</strong> Espacio según volumen contratado</li>
                 <li><strong>Eficiencia:</strong> Reduce costos logísticos unitarios por ruta</li>
               </ul>
@@ -127,13 +126,13 @@ import Layout from '../layouts/Layout.astro';
 
   <section id="servicios-brindados" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-3xl font-extrabold text-secondary tracking-tight border-none p-0">Servicios que te brindamos</h2>
+      <div class="text-center max-w-4xl mx-auto mb-16">
+        <h2 class="text-[2.625rem] font-extrabold text-primary tracking-tight border-none p-0">Servicios que te brindamos</h2>
         <p class="text-text-muted mt-3">Nos llamas, confirmamos disponibilidad y asignamos la unidad. Movemos tu carga con cobro por viaje, sin contratos ni compromisos. Ideal para operaciones regulares, urgencias y servicios dedicados.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-gray-50 p-8 rounded border border-gray-100 flex flex-col">
+        <div class="bg-gray-50 p-8 rounded border border-gray-100 flex flex-col items-center text-center">
           <div class="bg-primary/10 text-primary w-12 h-12 rounded flex items-center justify-center text-2xl mb-6">
             <i class="ph ph-lightning"></i>
           </div>
@@ -141,7 +140,7 @@ import Layout from '../layouts/Layout.astro';
           <p class="text-text-muted text-sm mt-2">Atendemos envíos de última hora para industrias como manufactura y maquiladoras.</p>
         </div>
 
-        <div class="bg-gray-50 p-8 rounded border border-gray-100 flex flex-col">
+        <div class="bg-gray-50 p-8 rounded border border-gray-100 flex flex-col items-center text-center">
           <div class="bg-primary/10 text-primary w-12 h-12 rounded flex items-center justify-center text-2xl mb-6">
             <i class="ph ph-truck"></i>
           </div>
@@ -149,7 +148,7 @@ import Layout from '../layouts/Layout.astro';
           <p class="text-text-muted text-sm mt-2">Asignamos unidades dedicadas con disponibilidad garantizada.</p>
         </div>
 
-        <div class="bg-gray-50 p-8 rounded border border-gray-100 flex flex-col">
+        <div class="bg-gray-50 p-8 rounded border border-gray-100 flex flex-col items-center text-center">
           <div class="bg-primary/10 text-primary w-12 h-12 rounded flex items-center justify-center text-2xl mb-6">
             <i class="ph ph-headset"></i>
           </div>
@@ -166,9 +165,8 @@ import Layout from '../layouts/Layout.astro';
       <div class="absolute inset-0 bg-[#1a1a1a]/60"></div>
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mb-16">
-        <span class="text-primary text-xs font-bold uppercase tracking-widest">Mafra Logistics</span>
-        <h2 class="text-3xl font-extrabold text-white mt-2 tracking-tight border-none p-0">¿Por qué debes elegirnos?</h2>
+      <div class="max-w-3xl mx-auto mb-16 text-center">
+        <h2 class="text-[2.625rem] font-extrabold text-white tracking-tight border-none p-0">¿Por qué debes elegirnos?</h2>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -207,12 +205,11 @@ import Layout from '../layouts/Layout.astro';
 
   <section id="cobertura" class="py-20 bg-white border-t border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mb-16">
-        <span class="text-primary text-xs font-bold uppercase tracking-widest">Mafra Logistics</span>
-        <h2 class="text-3xl font-extrabold text-secondary mt-2 tracking-tight border-none p-0">Cobertura Local y Nacional</h2>
+      <div class="max-w-3xl mx-auto mb-16 text-center">
+        <h2 class="text-[2.625rem] font-extrabold text-primary tracking-tight border-none p-0">Cobertura Local y Nacional</h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-14">
         <div class="flex flex-col justify-start">
           <p class="text-text-muted leading-relaxed">Contamos con bases operativas en Nuevo León, por lo que garantizamos tiempos de respuesta mínimos y disponibilidad inmediata de equipo en las principales zonas industriales del estado.</p>
           <p class="text-text-muted leading-relaxed mt-4">Desarrollamos nuevas rutas por petición de nuestros clientes.</p>
@@ -228,38 +225,37 @@ import Layout from '../layouts/Layout.astro';
 
   <section id="industrias" class="py-20 bg-gray-50 border-t border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mb-16">
-        <span class="text-primary text-xs font-bold uppercase tracking-widest">Mafra Logistics</span>
-        <h2 class="text-3xl font-extrabold text-secondary mt-2 tracking-tight border-none p-0">Industrias que han confiado<br class="hidden max-[747px]:inline" /> en nosotros</h2>
+      <div class="max-w-3xl lg:max-w-none mx-auto mb-16 text-center">
+        <h2 class="text-[2.625rem] font-extrabold text-secondary tracking-tight border-none p-0 lg:whitespace-nowrap">Industrias que han confiado<br class="hidden max-[747px]:inline lg:hidden" /> en nosotros</h2>
         <p class="text-text-muted mt-3">Entendemos la precisión operativa, las normativas y la urgencia que exigen los sectores clave de la región:</p>
       </div>
 
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
-        <div class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm lg:col-span-2 lg:col-start-2">
           <img src="/images/manufacturera.webp" alt="Industria Manufacturera" class="w-full h-32 object-cover" loading="lazy" />
           <div class="p-4 text-center">
             <span class="text-secondary font-bold text-sm">Manufacturera</span>
           </div>
         </div>
-        <div class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm">
+        <div class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm lg:col-span-2">
           <img src="/images/maquiladora.webp" alt="Industria Maquiladora" class="w-full h-32 object-cover" loading="lazy" />
           <div class="p-4 text-center">
             <span class="text-secondary font-bold text-sm">Maquiladora</span>
           </div>
         </div>
-        <div class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm">
+        <div class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm lg:col-span-2">
           <img src="/images/automotriz.webp" alt="Industria Automotriz" class="w-full h-32 object-cover" loading="lazy" />
           <div class="p-4 text-center">
             <span class="text-secondary font-bold text-sm">Automotriz</span>
           </div>
         </div>
-        <div class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm">
+        <div class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm lg:col-span-2">
           <img src="/images/construccion.webp" alt="Industria de la Construcción" class="w-full h-32 object-cover" loading="lazy" />
           <div class="p-4 text-center">
             <span class="text-secondary font-bold text-sm">Construcción</span>
           </div>
         </div>
-        <div class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm">
+        <div class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm lg:col-span-2">
           <img src="/images/siderurgia.webp" alt="Industria Siderúrgica" class="w-full h-32 object-cover" loading="lazy" />
           <div class="p-4 text-center">
             <span class="text-secondary font-bold text-sm">Siderúrgica</span>
@@ -272,8 +268,7 @@ import Layout from '../layouts/Layout.astro';
   <section id="clientes" class="py-20 bg-white border-t border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-primary text-xs font-bold uppercase tracking-widest">Mafra Logistics</span>
-        <h2 class="text-3xl font-extrabold text-secondary mt-2 tracking-tight border-none p-0">Nuestro Portafolio de Clientes</h2>
+        <h2 class="text-[2.625rem] font-extrabold text-primary tracking-tight border-none p-0">Nuestro Portafolio de Clientes</h2>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
@@ -293,79 +288,79 @@ import Layout from '../layouts/Layout.astro';
 
   <section id="nosotros" class="py-20 bg-white border-t border-gray-100">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl font-extrabold text-secondary tracking-tight border-none p-0">Sobre Nosotros</h2>
+      <h2 class="text-[2.625rem] font-extrabold text-primary tracking-tight border-none p-0">Sobre Nosotros</h2>
       <p class="text-text-muted leading-relaxed mt-6">En <strong class="text-secondary">Mafra Logistics</strong> somos un equipo joven, enérgico e incansablemente preparado, impulsado por una pasión colectiva por la excelencia. Combinamos a la perfección el vigor con la experiencia técnica del sector para ofrecer una experiencia logística innovadora, ágil y confiable.</p>
       <p class="text-text-muted leading-relaxed mt-4">Respaldados por una infraestructura de flota moderna y una sólida red de socios estratégicos. Somos tu fuerza dinámica de transporte con cobertura local y nacional.</p>
     </div>
   </section>
 
-  <section id="cotizar" class="py-20 bg-primary">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+  <section id="urgencia" class="py-20 bg-primary">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+      <h2 class="text-[2.625rem] font-extrabold text-white tracking-tight border-none p-0">¿Urgencia de Última Hora?</h2>
+      <p class="text-white/90 mt-4 leading-relaxed">No dejes que se detenga tu cadena de suministro. Te asignamos una unidad de inmediato con control y monitoreo continuo.</p>
+      <a href="tel:+528129115812" class="mt-8 inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-primary font-bold py-3 px-8 rounded text-sm transition-colors shadow-sm">
+        <i class="ph ph-phone-call text-lg"></i>
+        Llamada Directa
+      </a>
+    </div>
+  </section>
 
-        <div>
-          <h2 class="text-3xl font-extrabold text-white tracking-tight border-none p-0">Envía tu Cotización</h2>
-          <p class="text-white/90 mt-4 leading-relaxed">Le damos prioridad exclusiva a tu cuenta corporativa. Recibe respuesta inmediata de nuestro equipo de despacho.</p>
-          <ul class="mt-6 space-y-3">
-            <li class="flex items-start gap-2 text-sm text-white">
-              <i class="ph ph-check-circle text-white text-base mt-0.5"></i>
-              <span>Respuesta en menos de 15 minutos.</span>
-            </li>
-            <li class="flex items-start gap-2 text-sm text-white">
-              <i class="ph ph-check-circle text-white text-base mt-0.5"></i>
-              <span>Flota propia disponible.</span>
-            </li>
-          </ul>
+  <section id="cotizar" class="relative py-20 bg-secondary overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="/hero-mafra.jpg" alt="" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/70"></div>
+    </div>
+    <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+      <h2 class="text-[2.625rem] font-extrabold text-white tracking-tight border-none p-0">Envía tu Cotización</h2>
+      <p class="text-white/90 mt-4 leading-relaxed">Le damos prioridad exclusiva a tu cuenta corporativa.<br />Recibe respuesta inmediata de nuestro equipo de despacho.</p>
+      <ul class="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
+        <li class="flex items-center gap-2 text-sm text-white bg-primary px-4 py-2 rounded-full">
+          <i class="ph ph-check-circle text-white text-base"></i>
+          <span>Respuesta en menos de 15 minutos.</span>
+        </li>
+        <li class="flex items-center gap-2 text-sm text-white bg-primary px-4 py-2 rounded-full">
+          <i class="ph ph-check-circle text-white text-base"></i>
+          <span>Flota propia disponible.</span>
+        </li>
+      </ul>
 
-          <div class="bg-white p-8 rounded shadow-xl mt-10">
-            <form id="contact-form" class="space-y-4">
-              <input type="text" name="website" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
-              <div>
-                <label for="cot-nombre" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Nombre</label>
-                <input id="cot-nombre" name="nombre" type="text" placeholder="Tu nombre completo" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" required />
-              </div>
-              <div>
-                <label for="cot-empresa" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Empresa</label>
-                <input id="cot-empresa" name="empresa" type="text" placeholder="Nombre de tu empresa" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" required />
-              </div>
-              <div>
-                <label for="cot-correo" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Correo</label>
-                <input id="cot-correo" name="correo" type="email" placeholder="correo@empresa.com" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" required />
-              </div>
-              <div>
-                <label for="cot-telefono" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Teléfono</label>
-                <input id="cot-telefono" name="telefono" type="tel" placeholder="81 0000 0000" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" required />
-              </div>
-              <div>
-                <label for="cot-unidad" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Tipo de Unidad Requerida</label>
-                <select id="cot-unidad" name="unidad" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary bg-white" required>
-                  <option>Caja Seca de 53'</option>
-                  <option>Rabones de Caja (26')</option>
-                  <option>Plataforma de 48 y 53 pies</option>
-                  <option>Refrigeradas 53'</option>
-                  <option>Unidades 3.5 Plataforma y Caja Cerrada</option>
-                  <option>LTL (Consolidados)</option>
-                </select>
-              </div>
-              <div>
-                <label for="cot-ruta" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Ruta (Origen/Destino)</label>
-                <input id="cot-ruta" name="ruta" type="text" placeholder="Ej. Monterrey → Saltillo" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" required />
-              </div>
-              <button id="contact-submit" type="submit" class="w-full bg-primary hover:bg-primary/90 disabled:bg-text-muted disabled:cursor-not-allowed text-white font-bold py-3 px-4 rounded text-sm transition-colors mt-2 shadow-sm">Cotizar</button>
-              <p id="contact-status" class="hidden text-sm font-semibold" role="status" aria-live="polite"></p>
-            </form>
+      <div class="bg-white p-8 rounded shadow-xl mt-10 w-full text-left">
+        <form id="contact-form" class="space-y-4">
+          <input type="text" name="website" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div>
+            <label for="cot-nombre" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Nombre</label>
+            <input id="cot-nombre" name="nombre" type="text" placeholder="Tu nombre completo" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" required />
           </div>
-        </div>
-
-        <div>
-          <h2 class="text-3xl font-extrabold text-white tracking-tight border-none p-0">¿Urgencia de Última Hora?</h2>
-          <p class="text-white/90 mt-4 leading-relaxed">No dejes que se detenga tu cadena de suministro. Te asignamos una unidad de inmediato con control y monitoreo continuo.</p>
-          <a href="tel:+528129115812" class="mt-8 inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-primary font-bold py-3 px-8 rounded text-sm transition-colors shadow-sm">
-            <i class="ph ph-phone-call text-lg"></i>
-            Llamada Directa
-          </a>
-        </div>
-
+          <div>
+            <label for="cot-empresa" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Empresa</label>
+            <input id="cot-empresa" name="empresa" type="text" placeholder="Nombre de tu empresa" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" required />
+          </div>
+          <div>
+            <label for="cot-correo" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Correo</label>
+            <input id="cot-correo" name="correo" type="email" placeholder="correo@empresa.com" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" required />
+          </div>
+          <div>
+            <label for="cot-telefono" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Teléfono</label>
+            <input id="cot-telefono" name="telefono" type="tel" placeholder="81 0000 0000" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" required />
+          </div>
+          <div>
+            <label for="cot-unidad" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Tipo de Unidad Requerida</label>
+            <select id="cot-unidad" name="unidad" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary bg-white" required>
+              <option>Caja Seca de 53'</option>
+              <option>Rabones de Caja (26')</option>
+              <option>Plataforma de 48 y 53 pies</option>
+              <option>Refrigeradas 53'</option>
+              <option>Unidades 3.5 Plataforma y Caja Cerrada</option>
+              <option>LTL (Consolidados)</option>
+            </select>
+          </div>
+          <div>
+            <label for="cot-ruta" class="block text-xs font-semibold uppercase tracking-wider text-secondary mb-1">Ruta (Origen/Destino)</label>
+            <input id="cot-ruta" name="ruta" type="text" placeholder="Ej. Monterrey → Saltillo" class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:border-primary" required />
+          </div>
+          <button id="contact-submit" type="submit" class="w-full bg-primary hover:bg-primary/90 disabled:bg-text-muted disabled:cursor-not-allowed text-white font-bold py-3 px-4 rounded text-sm transition-colors mt-2 shadow-sm">Cotizar</button>
+          <p id="contact-status" class="hidden text-sm font-semibold" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </div>
   </section>

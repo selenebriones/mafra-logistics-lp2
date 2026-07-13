@@ -24,3 +24,8 @@ html, body {
 .swiper-pagination-bullet-active {
   background: var(--color-primary) !important;
 }
+
+.flotaSwiper.swiper-horizontal > .swiper-pagination-bullets {
+  position: static;
+  margin-top: 1.5rem;
+}
