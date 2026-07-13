@@ -420,11 +420,8 @@ import Layout from '../layouts/Layout.astro';
           }
 
           contactForm.reset();
-
-          if (contactStatus) {
-            contactStatus.className = 'text-sm font-semibold text-green-700';
-            contactStatus.textContent = result.message ?? 'Recibimos tu solicitud. Te contactaremos en breve.';
-          }
+          window.location.href = '/gracias';
+          return;
         } catch (error) {
           if (contactStatus) {
             contactStatus.className = 'text-sm font-semibold text-red-700';
