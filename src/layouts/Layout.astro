@@ -31,11 +31,43 @@ const { title } = Astro.props;
         <a href="#flota" class="hover:text-primary transition-colors">Nuestra Flota</a>
         <a href="#servicios" class="hover:text-primary transition-colors">Servicios</a>
       </nav>
-      <div>
-        <a href="#cotizar" class="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded text-sm font-semibold transition-all inline-block shadow-sm">Cotizar Ahora</a>
+      <div class="flex items-center gap-3">
+        <a href="#cotizar" class="hidden sm:inline-block bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded text-sm font-semibold transition-all shadow-sm">Cotizar Ahora</a>
+        <button id="mobile-menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" class="md:hidden p-2 -mr-2 text-secondary">
+          <i class="ph ph-list text-2xl"></i>
+        </button>
       </div>
     </div>
+    <nav id="mobile-menu" class="hidden md:hidden flex-col px-4 pb-4 space-y-1 text-sm font-medium bg-white border-t border-gray-100">
+      <a href="#inicio" class="block py-2 hover:text-primary transition-colors">Inicio</a>
+      <a href="#flota" class="block py-2 hover:text-primary transition-colors">Nuestra Flota</a>
+      <a href="#servicios" class="block py-2 hover:text-primary transition-colors">Servicios</a>
+      <a href="#cotizar" class="block mt-2 bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded text-sm font-semibold text-center transition-all shadow-sm">Cotizar Ahora</a>
+    </nav>
   </header>
+
+  <script>
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (menuBtn && menu) {
+      menuBtn.addEventListener('click', () => {
+        const isOpen = menu.classList.toggle('flex');
+        menu.classList.toggle('hidden');
+        menuBtn.setAttribute('aria-expanded', String(isOpen));
+        menuBtn.querySelector('i')?.classList.toggle('ph-list');
+        menuBtn.querySelector('i')?.classList.toggle('ph-x');
+      });
+      menu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          menu.classList.add('hidden');
+          menu.classList.remove('flex');
+          menuBtn.setAttribute('aria-expanded', 'false');
+          menuBtn.querySelector('i')?.classList.add('ph-list');
+          menuBtn.querySelector('i')?.classList.remove('ph-x');
+        });
+      });
+    }
+  </script>
 
   <main>
     <slot />
