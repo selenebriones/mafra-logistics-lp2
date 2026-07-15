@@ -271,31 +271,49 @@ import Layout from '../layouts/Layout.astro';
         <h2 class="text-[2.625rem] font-extrabold text-primary tracking-tight border-none p-0">Algunos de Nuestros Clientes</h2>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-        <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[120px]">
-          <img src="/images/ast.webp" alt="AST — Advanced Steel Technology" class="max-h-14 w-auto max-w-full object-contain" loading="lazy" />
-        </div>
-        <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[120px]">
-          <img src="/images/avery.webp" alt="Avery Dennison" class="max-h-20 w-auto max-w-full object-contain" loading="lazy" />
-        </div>
-        <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[120px]">
-          <!-- El SVG original es blanco; brightness-0 + opacity lo vuelve gris oscuro sobre fondo claro -->
-          <img src="/images/ALP2022.svg" alt="A.L.P. — Lighting Component Specialists" class="h-10 w-auto max-w-full object-contain brightness-0 opacity-70" loading="lazy" />
-        </div>
-        <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[120px]">
-          <img src="/images/henco.png" alt="Henco" class="max-h-14 w-auto max-w-full object-contain" loading="lazy" />
-        </div>
-        <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[120px]">
-          <img src="/images/logo_baltimore.png" alt="Baltimore Aircoil Company" class="max-h-14 w-auto max-w-full object-contain" loading="lazy" />
-        </div>
-        <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[120px]">
-          <img src="/images/logo_broad.png" alt="Broad-Ocean" class="max-h-20 w-auto max-w-full object-contain" loading="lazy" />
-        </div>
-        <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[120px]">
-          <img src="/images/logo_molded.png" alt="Molded Fiber Glass Companies" class="max-h-20 w-auto max-w-full object-contain" loading="lazy" />
-        </div>
-        <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[120px]">
-          <img src="/images/logo_pcm.png" alt="PCM" class="max-h-16 w-auto max-w-full object-contain" loading="lazy" />
+      <div class="swiper clientesSwiper">
+        <div class="swiper-wrapper items-stretch">
+          <div class="swiper-slide self-stretch h-auto">
+            <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[146px] h-full">
+              <img src="/images/ast.webp" alt="AST — Advanced Steel Technology" class="max-h-14 w-auto max-w-full object-contain" loading="lazy" />
+            </div>
+          </div>
+          <div class="swiper-slide self-stretch h-auto">
+            <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[146px] h-full">
+              <img src="/images/avery.webp" alt="Avery Dennison" class="max-h-20 w-auto max-w-full object-contain" loading="lazy" />
+            </div>
+          </div>
+          <div class="swiper-slide self-stretch h-auto">
+            <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[146px] h-full">
+              <!-- El SVG original es blanco; brightness-0 + opacity lo vuelve gris oscuro sobre fondo claro -->
+              <img src="/images/ALP2022.svg" alt="A.L.P. — Lighting Component Specialists" class="h-10 w-auto max-w-full object-contain brightness-0 opacity-70" loading="lazy" />
+            </div>
+          </div>
+          <div class="swiper-slide self-stretch h-auto">
+            <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[146px] h-full">
+              <img src="/images/henco.png" alt="Henco" class="max-h-14 w-auto max-w-full object-contain" loading="lazy" />
+            </div>
+          </div>
+          <div class="swiper-slide self-stretch h-auto">
+            <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[146px] h-full">
+              <img src="/images/logo_baltimore.png" alt="Baltimore Aircoil Company" class="max-h-14 w-auto max-w-full object-contain" loading="lazy" />
+            </div>
+          </div>
+          <div class="swiper-slide self-stretch h-auto">
+            <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[146px] h-full">
+              <img src="/images/logo_broad.png" alt="Broad-Ocean" class="max-h-20 w-auto max-w-full object-contain" loading="lazy" />
+            </div>
+          </div>
+          <div class="swiper-slide self-stretch h-auto">
+            <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[146px] h-full">
+              <img src="/images/logo_molded.png" alt="Molded Fiber Glass Companies" class="max-h-20 w-auto max-w-full object-contain" loading="lazy" />
+            </div>
+          </div>
+          <div class="swiper-slide self-stretch h-auto">
+            <div class="bg-white border border-gray-100 rounded-lg p-8 shadow-sm flex items-center justify-center min-h-[146px] h-full">
+              <img src="/images/logo_pcm.png" alt="PCM" class="max-h-16 w-auto max-w-full object-contain" loading="lazy" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
